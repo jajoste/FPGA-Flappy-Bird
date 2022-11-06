@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Apr 15 18:56:02 2022
+# Process ID: 21752
+# Current directory: H:/Documents/ES3B2/lab5_a/lab5_a.runs/over_blue_synth_1
+# Command line: vivado.exe -log over_blue.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source over_blue.tcl
+# Log file: H:/Documents/ES3B2/lab5_a/lab5_a.runs/over_blue_synth_1/over_blue.vds
+# Journal file: H:/Documents/ES3B2/lab5_a/lab5_a.runs/over_blue_synth_1\vivado.jou
+#-----------------------------------------------------------
+source over_blue.tcl -notrace

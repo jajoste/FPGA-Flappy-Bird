@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="info_blue_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1649776153">
+  <File Type="PA-TCL" Name="info_blue.tcl"/>
+  <File Type="REPORTS-TCL" Name="info_blue_reports.tcl"/>
+  <File Type="RDS-RDS" Name="info_blue.vds"/>
+  <File Type="RDS-UTIL" Name="info_blue_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="info_blue_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="info_blue.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/info_blue">
+    <File Path="$PSRCDIR/sources_1/ip/info_blue_1/info_blue.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="info_blue"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/info_blue">
+    <File Path="$PSRCDIR/sources_1/ip/info_blue_1/info_blue.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="info_blue"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
